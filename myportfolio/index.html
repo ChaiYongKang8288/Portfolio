@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About Chaiyk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            outline:none;
+        }
+        img{
+        display:flex;
+        
+        
+        }
+        body{
+            font-family: 'Oswald',sans-serif;
+            overflow-x: hidden;
+            color: #42424a;
+            height: 900px;
+            
+        }
+        
+        .box{
+        display:inline-flex;
+        align-items: center;
+        }
+        p{
+            color: black;
+            padding-left: 20px;
+            padding-bottom: 50px;
+        }
+        header{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            width: 100%;
+            padding: 0 249px;
+            border-bottom: 1px solid #dbdbdb;
+        }
+        header ul li{
+            display: inline-block;
+            list-style: none;
+            margin: 0 30px;
+        }
+        header ul li:last-child{
+            margin-right: 0;
+        }
+        header ul li a{
+            text-decoration: none;
+            color:#42424a;
+            padding:  22px 0;
+            display: inline-block;
+            transition: all ease 0.3s;
+            font-size:18px;
+        }
+        header ul li a:hover{
+            color: lightblue;
+        }
+
+        header ul .submenu{
+            position:absolute;
+            width: 200px;
+            background-color: white;
+            box-shadow: 0 20px 45px #00000020;
+            margin-top: -50px;
+            opacity: 0;
+            z-index: -999;
+            transition: all ease 0.5s;
+        }
+        header ul li:hover .submenu{
+            z-index: 99;
+            opacity: 1;
+            margin-top: 0;
+        }
+        header ul .submenu li{
+            margin: 0;
+            width: 100%;
+        }
+        header ul .submenu li a{
+            padding:15px 20px;
+            display: inline-block;
+            width:100%;
+        }
+        video{
+            width:100%;
+            
+        }
+        .container{
+            position: relative;
+            text-align: center;
+            color: purple;
+        }
+        .centered{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 100px;
+            
+        }
+        
+
+        @media screen and (max-width: 1080px) {
+            /* Styles for tablets and smaller screens */
+            header {
+                padding: 0 20px; /* Adjust padding for smaller screens */
+            }
+            header ul li {
+                margin: 0 15px; /* Adjust margin for smaller screens */
+            }
+            
+            .footerbox {
+                flex-direction: column; /* Change flex direction to stack vertically */
+            }
+            .snsicons {
+                margin-bottom: 20px; /* Adjust margin bottom for social icons */
+            }
+            footer {
+                padding: 20px; /* Add padding to footer for better spacing */
+            }
+            p {
+                padding-left: 0;
+                padding-bottom: 20px;
+            }
+           
+        }
+        
+        @media screen and (max-width: 480px) {
+            header{
+                padding:0 10px;
+            }
+            header ul li{
+                margin: 0 10px;
+            }
+
+        }
+        
+       
+       
+
+
+    </style>
+</head>
+<body>
+
+    <main>
+        <header>
+            <div class="logo">
+                <a href="index.html"><img  src="images/logotest.png" alt="" width="200" height="100"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">About Me</a>
+                        <ul class="submenu">
+                            <li><a href="aboutme.html">Past works</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="container">
+            <iframe src="https://www.youtube.com/embed/vRjp7VwSZTc?vq=4k2160&autoplay=1&mute=1&loop=1&controls=0&playlist=vRjp7VwSZTc" width="100%" height="1080" title="Chaiyk_beach" frameborder="0" allowfullscreen></iframe>
+            <div class="centered">I AM CHAI YONG KANG</div>
+        </div>
+       
+        <footer>
+            <div class="footerbox">
+                <div class="snsicons">
+                    <a href="https://www.instagram.com/ykgames_05/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/yong-kang-chai-264930253/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@Chaiykkk"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="footernav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutme.html">About</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="footerbot">
+                <p1>Copyright &copy;2024; Designed by <span class="designer">Chaiyk</span></p1>
+            </div>
+        </footer>
+        
+    </main>
+
+</body>
+
+    
+
+</html>

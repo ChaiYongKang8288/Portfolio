@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About Chaiyk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            outline:none;
+        }
+        img{
+            display:flex;
+        
+        
+        }
+        body{
+            font-family: 'Oswald',sans-serif;
+            overflow-x: hidden;
+            color: #42424a;
+            height: 2000px;
+        }
+        header{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            width: 100%;
+            padding: 0 249px;
+            border-bottom: 1px solid #dbdbdb;
+        }
+        header ul li{
+            display: inline-block;
+            list-style: none;
+            margin: 0 30px;
+        }
+        header ul li:last-child{
+            margin-right: 0;
+        }
+        header ul li a{
+            text-decoration: none;
+            color:#42424a;
+            padding:  22px 0;
+            display: inline-block;
+            transition: all ease 0.3s;
+            font-size:18px;
+        }
+        header ul li a:hover{
+            color: lightblue;
+        }
+
+        header ul .submenu{
+            position:absolute;
+            width: 200px;
+            background-color: white;
+            box-shadow: 0 20px 45px #00000020;
+            margin-top: -50px;
+            opacity: 0;
+            z-index: -999;
+            transition: all ease 0.5s;
+        }
+        header ul li:hover .submenu{
+            z-index: 99;
+            opacity: 1;
+            margin-top: 0;
+        }
+        header ul .submenu li{
+            margin: 0;
+            width: 100%;
+        }
+        header ul .submenu li a{
+            padding:15px 20px;
+            display: inline-block;
+            width:100%;
+        }
+        .box{
+            padding:20px;
+            border:10px solid black;
+            width:100%;
+            display:inline-flex;
+            align-items: center;
+        }
+        p{
+            color: black;
+            padding-left: 20px;
+            padding-bottom: 50px;
+        }
+        
+        @media screen and (max-width: 1080px) {
+            /* Styles for tablets and smaller screens */
+            header {
+                padding: 0 20px; /* Adjust padding for smaller screens */
+            }
+            header ul li {
+                margin: 0 15px; /* Adjust margin for smaller screens */
+            }
+            .box {
+                flex-direction: column; /* Change flex direction to stack vertically */
+            }
+            .box p {
+                padding-left: 0; /* Remove left padding for paragraphs */
+                padding-bottom: 20px; /* Adjust bottom padding for paragraphs */
+            }
+            .zoomnew,
+            .zoomnew1 {
+                margin-bottom: 20px; /* Adjust margin bottom for image containers */
+            }
+            .footerbox {
+                flex-direction: column; /* Change flex direction to stack vertically */
+            }
+            .snsicons {
+                margin-bottom: 20px; /* Adjust margin bottom for social icons */
+            }
+            footer {
+                padding: 20px; /* Add padding to footer for better spacing */
+            }
+            p {
+                padding-left: 0;
+                padding-bottom: 20px;
+            }
+           
+        }
+        
+        @media screen and (max-width: 480px) {
+            header{
+                padding:0 10px;
+            }
+            header ul li{
+                margin: 0 10px;
+            }
+
+        }
+       
+       
+
+
+    </style>
+</head>
+<body>
+
+    <main>
+        <header>
+            <div class="logo">
+                <a href="index.html"><img  src="images/logotest.png" alt="" width="200" height="100"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">About Me</a>
+                        <ul class="submenu">
+                            <li><a href="aboutme.html">Past works</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                </ul>
+            </nav>
+        </header>
+        <div class="box">
+            <div class="zoomnew">
+                <a href="https://youtu.be/vRjp7VwSZTc"><img src="images/testimg.png" alt="" width="576" height="300"></a>
+            </div>
+            <p>I created this project for one of my assignments for 3d environment design and we were tasked to create a island with a body of water with a hero tree and with that 
+                i decided to create a vacation island with a beach containing loungue chairs, coconuts, beautiful rocks, palm trees, as well as shops, over water villas, a shrine and a main villa further in the island.
+            </p>
+        </div>
+        <div class="box">
+            <p>I created this trailer as promotional material for one of my schools group projects where we made a VR game where the player is trying to escape a lab after he had been mutated.
+                I created this trailer like a movie by trying to add the deep voice as well as cool music to fit the exciting gameplay behind it. rmb to change thumbnail
+            </p>
+            <div class="zoomnew2">
+                <a href="https://youtu.be/jB1iaqHVOSM"><img src="images/12345 promo vid thumbnail trailer.png" alt="" width="576" height="300"></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="zoomnew">
+                <a href="https://xd.adobe.com/view/41c04cc7-a9de-448b-ace3-a28a29d830b6-1493/?fullscreen"><img src="images/12345 promo vid thumbnail gameboy.png" alt="" width="576" height="300"></a>
+            </div>
+            <p>I made this XD prototype for one of my assignments where we tasked to make something about us, to introduce ourselves to people and i decided to make something that 
+                resonated with me alot which were video games. I thought about what got me into video games and i remembered my first ever console was a gameboy which was given to me by my aunt and decided to make the theme
+                of the project Gameboy as well as retro so i made the controls like a gameboy and introduced myself through it.
+            </p>
+        </div>
+        <div class="box">
+            <p>This app prototype was created as a companion app for a game called Cyberheist where the objective of the game was to rob banks by infiltrating banks and killing police, 
+                one of the things i thought we could make was an app with everything there is to know about the game as well as create a community for players to share new ways to beat 
+                the game or locate bugs. There is also tutorials and a progession system.
+            </p>
+            <div class="zoomnew1">
+                <a href="https://xd.adobe.com/view/9cc4f8b1-c640-47ed-8b0b-fb4b528838ca-c997/?fullscreen"><img src="images/12345 promo vid thumbnail cyberheist.png" alt="" width="576" height="300"></a>
+            </div>
+        </div>
+        <footer>
+            <div class="footerbox">
+                <div class="snsicons">
+                    <a href="https://www.instagram.com/ykgames_05/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/yong-kang-chai-264930253/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@Chaiykkk"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="footernav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutme.html">About</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="footerbot">
+                <p1>Copyright &copy;2024; Designed by <span class="designer">Chaiyk</span></p1>
+            </div>
+        </footer>
+        
+    </main>
+
+</body>
+
+    
+
+</html>
